@@ -1,8 +1,7 @@
 import React from "react";
-import PostIt from "../components/Layout/PostIt";
-import ModalPage from "../components/Event/EventModal";
-// import AddEvent from './components/??';
-import API from "../utils/API";
+import PostIt from "../../components/Layout/PostIt/PostIt";
+import ModalPage from "../../components/Event/EventModal";
+import API from "../../utils/API";
 
 class Events extends React.Component {
   state = {

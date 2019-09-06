@@ -1,7 +1,7 @@
 import React from "react";
-import PostIt from "../components/Layout/PostIt";
-import PostModal from "../components/Post/PostModal";
-import API from "../utils/API";
+import PostIt from "../../components/Layout/PostIt/PostIt";
+import PostModal from "../../components/Post/PostModal";
+import API from "../../utils/API";
 
 class Posts extends React.Component {
   state = {

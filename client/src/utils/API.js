@@ -3,6 +3,7 @@ import axios from "axios";
 export default {
   // Gets all events
   findAll: function(type) {
+    console.log("api slash events!!!")
     return axios.get("/api/" + type);
   },
   // Gets the event with the given id

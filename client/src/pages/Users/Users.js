@@ -1,6 +1,6 @@
 import React from "react";
-import PostIt from '../components/Layout/PostIt';
-import API from '../utils/API'
+import PostIt from '../../components/Layout/PostIt/PostIt';
+import API from '../../utils/API'
 
 class Users extends React.Component {
   state = {
@@ -12,7 +12,7 @@ class Users extends React.Component {
   }
 
   getUsers = () => {
-    API.findAll("users")
+    API.findAll("profiles")
       .then(res => this.setState({ results: res.data }))
       .catch(err => console.log(err));
   }

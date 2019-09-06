@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Tasks from "../components/EventTasks/Tasks";
-import AddTask from "../components/EventTasks/AddTask";
-import EventInfo from "../components/EventTasks/EvenInfo";
+import Tasks from "../../components/EventTasks/Tasks";
+import AddTask from "../../components/EventTasks/AddTask";
+import EventInfo from "../../components/EventTasks/EvenInfo";
 
 export class Event extends Component {
   state = {

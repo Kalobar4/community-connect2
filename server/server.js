@@ -59,7 +59,11 @@ app.use(require('./controllers'));
 
 //-- React catch-all ---------------------------------------------------------
 app.get('*', (req, res) => {
+  if (PORT === process.env.PORT) {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  } else {
+    console.log("Tried to access an API URL that doesn't exist.")
+  }
 });
 
 //-- Main --------------------------------------------------------------------
