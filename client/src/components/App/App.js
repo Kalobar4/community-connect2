@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import API from '../../lib/API';
-import TokenStore from '../../lib/TokenStore';
-import AuthContext from '../../contexts/AuthContext';
-import Navigation from '../../components/Navigation/Navigation';
-import PrivateRoute from '../../components/PrivateRoute/PrivateRoute';
-// import Home from '../../pages/Home/Home';
-import Login from '../../pages/Login/Login';
-import Register from '../../pages/Register/Register';
-import Secret from '../../pages/Secret/Secret';
-import NotFound from '../../pages/NotFound/NotFound';
-import Events from '../../pages/Events';
-import Posts from '../../pages/Posts';
-import Users from '../../pages/Users';
-import Landing from '../Landing/Landing';
+import API from "../../lib/API";
+import TokenStore from "../../lib/TokenStore";
+import AuthContext from "../../contexts/AuthContext";
+import Navigation from "../../components/Navigation/Navigation";
+import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
+import Home from "../../pages/Home/Home";
+import Login from "../../pages/Login/Login";
+import Register from "../../pages/Register/Register";
+import Secret from "../../pages/Secret/Secret";
+import NotFound from "../../pages/NotFound/NotFound";
+import Events from "../../pages/Events";
+import Posts from "../../pages/Posts";
+import Users from "../../pages/Users";
+import Landing from "../Landing/Landing";
 
-import './App.css';
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -64,17 +64,23 @@ class App extends Component {
     return (
       <BrowserRouter>
         <AuthContext.Provider value={this.state.auth}>
+<<<<<<< HEAD
           <div className='App'>
             <Navigation />
             <div className='container'>
+=======
+          <div className="App">
+            {/* <Navigation /> */}
+            <div className="container">
+>>>>>>> 0ccf516a772c64400cb65100d6838ce205a2dfe9
               <Switch>
-                <Route exact path='/' component={Landing} />
-                <Route exact path='/events' component={Events} />
-                <Route exact path='/posts' component={Posts} />
-                <Route exact path='/users' component={Users} />
-                <Route exact path='/login' component={Login} />
-                <Route exact path='/register' component={Register} />
-                <PrivateRoute exact path='/secret' component={Secret} />
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/events" component={Events} />
+                <Route exact path="/posts" component={Posts} />
+                <Route exact path="/users" component={Users} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/register" component={Register} />
+                <PrivateRoute exact path="/secret" component={Secret} />
                 <Route component={NotFound} />
               </Switch>
             </div>

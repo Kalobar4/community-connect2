@@ -3,11 +3,11 @@ const db = require('../../models');
 // Defining methods for the PostsController
 module.exports = {
   findAll: function(req, res) {
-    console.log(db.Posts);
+    console.log(db.Posts, 'Get Request: Post.db find all ******');
     db.Posts.find(req.query)
       .sort({ date: -1 })
       .then(dbModel => {
-        console.log(dbModel, 'testing123');
+        console.log(dbModel, 'testing -  Results from data base query *********');
         res.json(dbModel);
       })
       .catch(err => res.status(422).json(err));
