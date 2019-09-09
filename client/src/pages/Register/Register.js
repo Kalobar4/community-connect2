@@ -42,7 +42,7 @@ class Register extends Component {
       <div className='Login'>
         <div className='row'>
           <div className='col'>
-            <h1>Register Account</h1>
+            {/* <h1>Register Account</h1> */}
           </div>
         </div>
         {this.state.error && (

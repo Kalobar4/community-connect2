@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './community-app.jpg';
+import logo from './logo-small.png';
 
 import AuthContext from '../../contexts/AuthContext';
 import AuthDropdown from '../../components/AuthDropdown/AuthDropdown';
@@ -30,9 +30,9 @@ class Navigation extends Component {
       <div className='Navigation'>
         <nav className='navbar navbar-expand-lg navbar-light bg-light mb-3'>
           <span className='navbarBrand'>
-            <img src={logo}></img>
+            <img to="./Landing" src={logo}></img>
           </span>{' '}
-          <Link className='navbar-brand' to='#'></Link>
+          <Link className='navbar-brand' to='./Landing'></Link>
           <button
             className={togglerClass}
             onClick={this.toggleCollapse}
@@ -46,19 +46,22 @@ class Navigation extends Component {
           </button>
           <div className={targetClass} id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
-              <li id='home' className='nav-item'>
-                <Link className='nav-link' to='/' onClick={this.toggleCollapse}>
-                  Home
+              <li  className='nav-item'>
+                <Link id='events' className='nav-link' to='/Events' onClick={this.toggleCollapse}>
+                  Events
+                </Link>
+                <Link id="posts" className='nav-link' to='/Posts' onClick={this.toggleCollapse}>
+                  Posts
                 </Link>
               </li>
               {user && (
                 <li className='nav-item'>
                   <Link
                     className='nav-link'
-                    to='/secret'
+                    to='/Posts'
                     onClick={this.toggleCollapse}
                   >
-                    Members Link - private info TBD
+                    Posts
                   </Link>
                 </li>
               )}

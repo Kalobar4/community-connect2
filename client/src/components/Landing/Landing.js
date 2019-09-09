@@ -51,21 +51,8 @@ class Landing extends Component {
     }
 
     return (
-      <div
-        style={{
-          border: '29px solid transparent',
-          backgroundImage:
-            "url('https://freebie.photography/concept/network_node.jpg')",
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          borderImageSource:
-            'url("http://res.cloudinary.com/cspaveljb/image/upload/v1499110958/corkborder_f8cm3g.png")',
-          borderImageSlice: '29 29',
-          borderImageWidth: '29px 29px',
-          height: '100vh'
-        }}
-        className='Form'
+      <div id="board"
+        className='Form' 
       >
         <div className='mask rgba-gradient align-items-center' />
         <div className='container'>
@@ -73,7 +60,7 @@ class Landing extends Component {
             <div className='col-md-6 white-text text-center text-md-left'>
               <Link to='/events'>
                 <h1
-                  id='cc'
+                  id='getposted'
                   style={{ marginTop: '10vh' }}
                   className='h1-responsive font-weight-bold wow fadeInLeft'
                   data-wow-delay='0.3s'
@@ -108,7 +95,7 @@ class Landing extends Component {
               </div>
             )}
 
-            <div id='reg' className='col-md-6'>
+            <div id='regform' className='col-md-6'>
 
                 <RegistrationForm />
         

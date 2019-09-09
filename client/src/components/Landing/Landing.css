@@ -1,36 +1,45 @@
-@media only screen and (max-width: 767px) {
-   #cc {
-       margin-top: -50px;
-       padding-top: -50px;
-       
-}}
-
 
 @media only screen and (max-width: 767px) {
-    #reg {
+    #regform {
       margin-top: -50px;
       padding-top: -50px;
+      height: 5vh;
       
  }}
 
-.size{
-    width: 100%
+
+@media only screen and (max-width: 767px) {
+  #getposted{
+    padding-top: 0px;
+    
+}}
+
+
+ @media only screen and (max-width: 767px) {
+  #board {
+    height: 200vh;
+}}
+
+#board {
+    border: 29px solid transparent;
+    background-image:
+      url('https://freebie.photography/concept/network_node.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-image-source:
+      url("http://res.cloudinary.com/cspaveljb/image/upload/v1499110958/corkborder_f8cm3g.png");
+    border-image-slice: 29 29;
+    border-image-width: 29px 29px;
+    height: 100vh;
 }
-
-#reg {
-    background-image: transparent !important;
-  }
-
-
-  #yes {
-    margin-left: 600px;
-  }
-
 
   
  h6 {
    line-height: 1px;
  }
+
+
   .card {
       background-color: rgba(126, 123, 215, 0.2);
     }
@@ -38,11 +47,4 @@
     .md-form label {
       color: #ffffff;
     }
-  
-
-  
-  .md-form {
-      background: transparent !important;
-  }
-
   

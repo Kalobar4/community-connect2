@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Octicon, { Mail, Key } from '@githubprimer/octicons-react';
 
+import './registration.css'
+
 class RegistrationForm extends Component {
   state = {
     username: '',
@@ -30,7 +32,7 @@ class RegistrationForm extends Component {
     return (
       <div className='LoginForm'>
         <div
-          style={{ marginTop: '10vh' }}
+          style={{ marginTop: '9vh' }}
           className='card wow fadeInRight size'
           data-wow-delay='0.3s'
         >

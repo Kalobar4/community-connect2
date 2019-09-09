@@ -1,4 +1,29 @@
-#yes {
+.navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    background: transparent !important;
+    /* text-align: right; */
+  } 
+
+  
+
+  @media only screen and (min-width: 767px) {
+    #events  {
+      padding-left: 400px;
+      float: right;
+     
+
+      
+      
+ }}
+
+
+ @media only screen and (min-width: 767px) {
+  #posts  {
+    padding-left: 700px;
+
    
-    float: right;
-}
+    
+}}
+

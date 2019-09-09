@@ -4,6 +4,7 @@ import ModalPage from '../components/Events/EventModal';
 // import AddEvent from './components/??';
 import API from '../utils/API';
 import { Link } from 'react-router-dom';
+import {navbar} from '../components/Navigation/Navigation'
 
 class Events extends React.Component {
   state = {
@@ -26,12 +27,12 @@ class Events extends React.Component {
     return (
       <div className='event-board'>
         <h1>Upcoming Events</h1>
-        <Link to='/posts' style={{ float: 'right', marginLeft: '15px' }}>
+        {/* <Link to='/posts' style={{ float: 'right', marginLeft: '15px' }}>
           <p>Posts</p>{' '}
         </Link>
         <Link to='/' style={{ float: 'right' }}>
           <p>Home</p>{' '}
-        </Link>
+        </Link> */}
 
         {/*passing getEvents to the add button so it can refresh*/}
         <ModalPage ModalPage={this.props.AddEvent} />
