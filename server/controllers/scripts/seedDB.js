@@ -443,80 +443,80 @@ const eventsData = [
     html_url:
       'https://www.eventbrite.com/e/unc-charlottes-international-festival-tickets-48281933563'
   },
-  {
-    id: '5',
-    event_url:
-      'http://www.therelatives.org/wp-content/uploads/2016/08/We-Walk-Together-group-May-2016.jpg',
-    event_title: 'We Walk Together Charlotte - WALK in Charlotte',
-    event_details: '08:30-10:00am',
-    event_date: 'October 15th, 2019',
-    event_task: 'Bring your best work!',
-    event_place: 'Salvation Army Center Of Hope Shelter for Women and Children',
-    community: 'Midtown',
-    html_url: 'https://www.wewalktogethercharlotte.org/'
-  },
-  {
-    id: '6',
-    event_url:
-      'https://festivalinthepark.org/wp-content/uploads/2019/08/FITP-2019_kiosk-banner.jpg',
-    event_title: 'Festival In The Park',
-    event_details: '4:00pm-TBD',
-    event_date: 'Fri, Sep 20 – Sun, Sep 22',
-    event_task: 'Bring your best work!',
-    event_place: 'Freedom Park',
-    community: 'Freedom',
-    html_url: 'https://10times.com/festival-in-park'
-  },
-  {
-    id: '7',
-    event_url:
-      'http://clt250.com/files/2018/08/qcu_charlotte_unite_festival_pic_1.jpg',
-    event_title: '3rd Annual Charlotte UNITE Festival',
-    event_details: '12-8pm',
-    event_date: 'Saturday, Oct 5',
-    event_task: 'Bring your best work!',
-    event_place: 'NoDa Brewing Company',
-    community: 'NoDa',
-    html_url:
-      'https://www.eventbrite.com/e/3rd-annual-charlotte-unite-festival-tickets-62915953310'
-  },
-  {
-    id: '8',
-    event_url:
-      'https://charlottekidsfest.org/wp-content/uploads/2019/05/charlotte-kids-fest-18_44023659955_o.jpg',
-    event_title: 'Charlotte Kids Fest in University City',
-    event_details: '11am-4pm',
-    event_date: 'Saturday, Oct 5',
-    event_task: 'Bring your best work!',
-    event_place: 'RI-1 Deck, 9100 Robert D. Snyder Rd, Charlotte, NC',
-    community: 'University',
-    html_url:
-      'https://www.charlotteonthecheap.com/charlotte-kids-fest-university-city/'
-  },
-  {
-    id: '9',
-    event_url:
-      'https://www.highlandcreek.com/wp-content/uploads/2017/03/stark-reality-logo.jpg',
-    event_title: 'Concert in the Park',
-    event_details: '5:30-8:30pm',
-    event_date: 'Sat, Sep 14',
-    event_task: 'Bring your best work!',
-    event_place: 'Prosperity Park',
-    community: 'Prosperity',
-    html_url: 'https://www.highlandcreek.com/events/concert-in-the-park/'
-  },
-  {
-    id: '10',
-    event_url:
-      'https://s3-media1.fl.yelpcdn.com/ephoto/ev2QAWHDXdSW1gZBX0vhMw/300s.jpg',
-    event_title: 'VolunCHEERS: Midtown Greenway Clean Up',
-    event_details: '10 AM – 2 PM',
-    event_date: 'Sun, Sep 15',
-    event_task: 'Bring your best work!',
-    event_place: 'Midtown Park',
-    community: 'Midtown',
-    html_url: 'https://www.meetup.com/South-End-Social/'
-  },
+  // {
+  //   id: '5',
+  //   event_url:
+  //     'http://www.therelatives.org/wp-content/uploads/2016/08/We-Walk-Together-group-May-2016.jpg',
+  //   event_title: 'We Walk Together Charlotte - WALK in Charlotte',
+  //   event_details: '08:30-10:00am',
+  //   event_date: 'October 15th, 2019',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'Salvation Army Center Of Hope Shelter for Women and Children',
+  //   community: 'Midtown',
+  //   html_url: 'https://www.wewalktogethercharlotte.org/'
+  // },
+  // {
+  //   id: '6',
+  //   event_url:
+  //     'https://festivalinthepark.org/wp-content/uploads/2019/08/FITP-2019_kiosk-banner.jpg',
+  //   event_title: 'Festival In The Park',
+  //   event_details: '4:00pm-TBD',
+  //   event_date: 'Fri, Sep 20 – Sun, Sep 22',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'Freedom Park',
+  //   community: 'Freedom',
+  //   html_url: 'https://10times.com/festival-in-park'
+  // },
+  // {
+  //   id: '7',
+  //   event_url:
+  //     'http://clt250.com/files/2018/08/qcu_charlotte_unite_festival_pic_1.jpg',
+  //   event_title: '3rd Annual Charlotte UNITE Festival',
+  //   event_details: '12-8pm',
+  //   event_date: 'Saturday, Oct 5',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'NoDa Brewing Company',
+  //   community: 'NoDa',
+  //   html_url:
+  //     'https://www.eventbrite.com/e/3rd-annual-charlotte-unite-festival-tickets-62915953310'
+  // },
+  // {
+  //   id: '8',
+  //   event_url:
+  //     'https://charlottekidsfest.org/wp-content/uploads/2019/05/charlotte-kids-fest-18_44023659955_o.jpg',
+  //   event_title: 'Charlotte Kids Fest in University City',
+  //   event_details: '11am-4pm',
+  //   event_date: 'Saturday, Oct 5',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'RI-1 Deck, 9100 Robert D. Snyder Rd, Charlotte, NC',
+  //   community: 'University',
+  //   html_url:
+  //     'https://www.charlotteonthecheap.com/charlotte-kids-fest-university-city/'
+  // },
+  // {
+  //   id: '9',
+  //   event_url:
+  //     'https://www.highlandcreek.com/wp-content/uploads/2017/03/stark-reality-logo.jpg',
+  //   event_title: 'Concert in the Park',
+  //   event_details: '5:30-8:30pm',
+  //   event_date: 'Sat, Sep 14',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'Prosperity Park',
+  //   community: 'Prosperity',
+  //   html_url: 'https://www.highlandcreek.com/events/concert-in-the-park/'
+  // },
+  // {
+  //   id: '10',
+  //   event_url:
+  //     'https://s3-media1.fl.yelpcdn.com/ephoto/ev2QAWHDXdSW1gZBX0vhMw/300s.jpg',
+  //   event_title: 'VolunCHEERS: Midtown Greenway Clean Up',
+  //   event_details: '10 AM – 2 PM',
+  //   event_date: 'Sun, Sep 15',
+  //   event_task: 'Bring your best work!',
+  //   event_place: 'Midtown Park',
+  //   community: 'Midtown',
+  //   html_url: 'https://www.meetup.com/South-End-Social/'
+  // },
   {
     _id: mongoose.Types.ObjectId('5d73c9d7ab2aa7245ceb4307'),
     category: 'random',
