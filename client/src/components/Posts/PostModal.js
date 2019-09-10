@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import AddPost from "./AddPost";
+import React, { Component } from 'react';
+import AddPost from './AddPost';
 
 import {
   MDBContainer,
@@ -7,7 +7,7 @@ import {
   MDBModal,
   MDBModalBody,
   MDBModalHeader
-} from "mdbreact";
+} from 'mdbreact';
 
 class PostModal extends Component {
   state = {
@@ -18,6 +18,7 @@ class PostModal extends Component {
     this.setState({
       modal: !this.state.modal
     });
+    this.props.getPosts();
   };
 
   render() {
@@ -27,6 +28,7 @@ class PostModal extends Component {
         <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
           <MDBModalHeader toggle={this.toggle}>Help Wanted</MDBModalHeader>
           <MDBModalBody>{<AddPost />}</MDBModalBody>
+          <MDBBtn onClick={this.toggle}>Close</MDBBtn>
         </MDBModal>
       </MDBContainer>
     );
