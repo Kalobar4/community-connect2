@@ -19,12 +19,9 @@ const PostPostIt = props => {
           className="roundImg"
           style={{ width: "60px " }}
         />
-        <h3>{props.category}</h3>
+        <h3 className="PostPostIt_title">{props.category}</h3>
         <h5>{props.post_title}</h5>
-        <MoreButton
-          type="posts"
-          id = {props._id}
-         />
+        <MoreButton type="posts" id={props._id} />
       </div>
       <div></div>
     </div>

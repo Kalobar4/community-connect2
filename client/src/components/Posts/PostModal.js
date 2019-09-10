@@ -27,6 +27,7 @@ class PostModal extends Component {
         <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
           <MDBModalHeader toggle={this.toggle}>Help Wanted</MDBModalHeader>
           <MDBModalBody>{<AddPost />}</MDBModalBody>
+          <MDBBtn onClick={this.toggle}>Close</MDBBtn>
         </MDBModal>
       </MDBContainer>
     );

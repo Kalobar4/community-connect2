@@ -12,7 +12,6 @@ import {
   MDBDropdownItem
 } from "mdbreact";
 import "./AddPost.css";
-// import ModalPage from "./EventModal";
 
 export class AddPost extends Component {
   state = {
@@ -37,19 +36,19 @@ export class AddPost extends Component {
 
   onSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
     if (this.state.post_title && this.state.post_details) {
       API.createOne("posts", {
         post_title: this.state.post_title,
         post_details: this.state.post_details,
         category: this.state.category,
-        // urgent: this.state.urgent
+        urgent: this.state.urgent,
         // help_needed: this.state.help_needed,
         offering: this.state.offering,
         cost_per_hour: this.state.cost_per_hour,
-        cost_per_service: this.state.cost_per_service
-        // trade: this.state.trade
+        cost_per_service: this.state.cost_per_service,
+        trade: this.state.trade
       }).then(() => {
+        console.log(this.state.category);
         this.setState({
           category: "",
           post_title: "",
@@ -72,7 +71,8 @@ export class AddPost extends Component {
             <form>
               <div className="orange-text">
                 <MDBInput
-                  label="Is it urgent?"
+                  className="urgent"
+                  label="Click if it's urgent!"
                   type="checkbox"
                   id="checkbox2"
                   name="urgent"
@@ -81,13 +81,12 @@ export class AddPost extends Component {
                   onChange={this.onChange}
                 />
                 <MDBDropdown>
-                  <MDBDropdownToggle caret color="orange">
-                    Category
-                  </MDBDropdownToggle>
+                  <MDBDropdownToggle>Category</MDBDropdownToggle>
                   <MDBDropdownMenu
                     basic
                     value={this.state.category}
                     onChange={this.onChange}
+                    name="category"
                   >
                     <MDBDropdownItem>Yard</MDBDropdownItem>
                     <MDBDropdownItem>Kids</MDBDropdownItem>
@@ -109,7 +108,6 @@ export class AddPost extends Component {
                   value={this.state.post_title}
                   onChange={this.onChange}
                 />
-
                 <MDBInput
                   label="Details About The Post"
                   type="textarea"
