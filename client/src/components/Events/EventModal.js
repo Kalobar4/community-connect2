@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import AddEvent from "./AddEvent";
+import React, { Component } from 'react';
+import AddEvent from './AddEvent';
 
 import {
   MDBContainer,
@@ -7,7 +7,7 @@ import {
   MDBModal,
   MDBModalBody,
   MDBModalHeader
-} from "mdbreact";
+} from 'mdbreact';
 
 class ModalPage extends Component {
   state = {
@@ -18,6 +18,7 @@ class ModalPage extends Component {
     this.setState({
       modal: !this.state.modal
     });
+    this.props.getEvents();
   };
 
   render() {
