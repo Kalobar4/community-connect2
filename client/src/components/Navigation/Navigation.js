@@ -30,7 +30,7 @@ class Navigation extends Component {
       <div className='Navigation'>
         <nav className='navbar navbar-expand-lg navbar-light bg-light mb-3'>
           <span className='navbarBrand'>
-            <img to="./Landing" src={logo} alt= '...'></img>
+            <img id='logo' to='./Landing' src={logo} alt='...'></img>
           </span>{' '}
           <Link className='navbar-brand' to='./Landing'></Link>
           <button
@@ -46,14 +46,29 @@ class Navigation extends Component {
           </button>
           <div className={targetClass} id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
-              <li  className='nav-item'>
-                <Link id='events' className='nav-link' to='/Events' onClick={this.toggleCollapse}>
+              <li className='nav-item'>
+                <Link
+                  id='events'
+                  className='nav-link'
+                  to='/Events'
+                  onClick={this.toggleCollapse}
+                >
                   Events
                 </Link>
-                <Link id="posts" className='nav-link' to='/Posts' onClick={this.toggleCollapse}>
+                <Link
+                  id='posts'
+                  className='nav-link'
+                  to='/Posts'
+                  onClick={this.toggleCollapse}
+                >
                   Posts
                 </Link>
-                <Link id='events' className='nav-link' to='/Users' onClick={this.toggleCollapse}>
+                <Link
+                  id='events'
+                  className='nav-link'
+                  to='/Users'
+                  onClick={this.toggleCollapse}
+                >
                   Users
                 </Link>
               </li>

@@ -1,47 +1,43 @@
 @media only screen and (max-width: 767px) {
-   #cc {
-       margin-top: -50px;
-       padding-top: -50px;
-       
-}}
-
+  #cc {
+    margin-top: 0px;
+  }
+  .Form {
+    min-height: 1200px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
-    #reg {
-      margin-top: -50px;
-      padding-top: -50px;
-      
- }}
+  #reg {
+    padding-top: 10px;
+  }
+}
 
-.size{
-    width: 100%
+.size {
+  width: 100%;
 }
 
 #reg {
-    background-image: transparent !important;
-  }
+  background-image: transparent !important;
+  margin-top: 140px;
+}
 
+h6 {
+  line-height: 1px;
+}
+.card {
+  background-color: rgba(126, 123, 215, 0.2);
+  margin-top: 60px;
+}
 
+.md-form label {
+  color: #ffffff;
+}
 
-  
- h6 {
-   line-height: 1px;
- }
-  .card {
-      background-color: rgba(126, 123, 215, 0.2);
-    }
-    
-    .md-form label {
-      color: #ffffff;
-    }
-  
+.md-form {
+  background: transparent !important;
+}
 
-  
-  .md-form {
-      background: transparent !important;
-  }
-
-  /* #corkboard {
+/* #corkboard {
     border-image: url(corkborder.png) 25 25 round;
   } */
-  

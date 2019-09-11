@@ -1,5 +1,6 @@
-
 .navbar {
   background: transparent !important;
- 
+}
+#logo {
+  width: 80%;
 }

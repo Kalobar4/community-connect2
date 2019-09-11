@@ -94,7 +94,11 @@ class Landing extends Component {
                   className='h1-responsive font-weight-bold wow fadeInLeft'
                   data-wow-delay='0.3s'
                 >
-                  #GetPosted
+                  <img
+                    style={{ width: '70%' }}
+                    src='./logo-small.png'
+                    alt='...'
+                  ></img>
                 </h1>{' '}
                 <hr className='hr-light wow fadeInLeft' data-wow-delay='0.3s' />
                 <LoginForm onSubmit={this.handleSubmit} />
